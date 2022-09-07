@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-09-06T15:40:55.024Z</updated>
+  <updated>2022-09-07T14:03:56.943Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,38 +17,18 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>zqztest</title>
+    <title>使用hexo搭建自己的博客</title>
     <link href="http://example.com/2022/09/03/zqztest/"/>
     <id>http://example.com/2022/09/03/zqztest/</id>
     <published>2022-09-03T04:53:35.000Z</published>
-    <updated>2022-09-06T15:40:55.024Z</updated>
+    <updated>2022-09-07T14:03:56.943Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="一、npm的使用方法"><a href="#一、npm的使用方法" class="headerlink" title="一、npm的使用方法"></a>一、npm的使用方法</h2><h3 id="第一种："><a href="#第一种：" class="headerlink" title="第一种："></a>第一种：</h3><p>直接安装cnpm 安装淘宝提供的cnpm，并更改服务器地址为淘宝的国内地址， 命令：<code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code>，以后安装直接采用<code>cpm</code>替代<code>npm</code>， 例如原生npm命令为：<code>npm install uniq --save</code>，cnpm命令为：<code>cnpm install uniq --save</code></p><h3 id="第二种："><a href="#第二种：" class="headerlink" title="第二种："></a>第二种：</h3><p>替换npm仓库地址为淘宝镜像地址（推荐） 命令：<code>npm config set registry https://registry.npm.taobao.org</code>， 查看是否更改成功：<code>npm config get registry</code>，以后安装时，依然用npm命令，但是实际是从淘宝国内服务器下载的</p><h2 id="二、hexo的使用方法"><a href="#二、hexo的使用方法" class="headerlink" title="二、hexo的使用方法"></a>二、hexo的使用方法</h2><p>1、通过npm安装hexo</p><p>npm install -g hexo-cli<br>hexo -v查看是否安装成功</p><p>2、初始化博客</p><p>在空的文件夹执行，hexo init .&#x2F;</p><p>3、在初始化后的文件夹中启动本地服务</p><p>&#x2F;&#x2F; 这个是generate，生成静态文件</p><p>hexo g </p><p>&#x2F;&#x2F; 启动一个本地服务</p><p>hexo server</p><p>这样可以本地查看了</p><p>4、部署到服务端</p><p> &#x2F;&#x2F; hexo用于部署的插件</p><p>npm install hexo-deploy-git –save </p><p> &#x2F;&#x2F; hexo用于部署的插件</p><p>打开根目录下的_config.yml文件，修改目的仓库，找到deploy，进行添加</p><p>deploy:</p><p>​type: git</p><p>​repo: 仓库路径</p><p>​branch: master</p><p> &#x2F;&#x2F; 站点推送,  hexo deploy</p><p>hexo d</p><p><a href="https://xindeworld.github.io/">https://xindeworld.github.io/</a></p><p>5、其他命令</p><p>hexo clean清楚之前生成的东西</p><p>参考 ： <a href="https://blog.csdn.net/weixin_45019350/article/details/121901433">https://blog.csdn.net/weixin_45019350/article/details/121901433</a></p><p>NOTICE: 站点还无法访问需要开启Gitee Pages（gitee需要开启，github不需要） </p><p>6、更新主题</p><p>下载主题—》放到themes文件夹—》更改_config.xml中的theme字段为主题子文件夹</p><p>7、写文章</p><h3 id="三、python也有个转静态网页的方式，叫mkdocs工具"><a href="#三、python也有个转静态网页的方式，叫mkdocs工具" class="headerlink" title="三、python也有个转静态网页的方式，叫mkdocs工具"></a>三、python也有个转静态网页的方式，叫mkdocs工具</h3>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;一、npm的使用方法&quot;&gt;&lt;a href=&quot;#一、npm的使用方法&quot; class=&quot;headerlink&quot; title=&quot;一、npm的使用方法&quot;&gt;&lt;/a&gt;一、npm的使用方法&lt;/h2&gt;&lt;h3 id=&quot;第一种：&quot;&gt;&lt;a href=&quot;#第一种：&quot; class=&quot;head</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2022/09/03/hello-world/"/>
-    <id>http://example.com/2022/09/03/hello-world/</id>
-    <published>2022-09-03T03:09:40.202Z</published>
-    <updated>2022-09-03T03:09:40.202Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="一、npm的使用"><a href="#一、npm的使用" class="headerlink" title="一、npm的使用"></a>一、npm的使用</h2><h3 id="方法1"><a href="#方法1" class="headerlink" title="方法1"></a>方法1</h3><p>直接安装cnpm（cnpm是淘宝提供的npm在国内的镜像），并更改服务器地址为淘宝的国内地址， 命令：<code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code>，以后安装直接采用<code>cnpm</code>替代<code>npm</code>， 例如原生npm命令为：<code>npm install uniq --save</code>，cnpm命令为：<code>cnpm install uniq --save</code></p><h3 id="方法2"><a href="#方法2" class="headerlink" title="方法2"></a>方法2</h3><p>替换npm仓库地址为淘宝镜像地址（推荐） 命令：<code>npm config set registry https://registry.npm.taobao.org</code>， 查看是否更改成功：<code>npm config get registry</code>，以后安装时，依然用npm命令，但是实际是从淘宝国内服务器下载的</p><h2 id="二、hexo的使用"><a href="#二、hexo的使用" class="headerlink" title="二、hexo的使用"></a>二、hexo的使用</h2><h3 id="1、通过npm安装hexo"><a href="#1、通过npm安装hexo" class="headerlink" title="1、通过npm安装hexo"></a>1、通过npm安装hexo</h3><p>npm install -g hexo-cli<br>hexo -v查看是否安装成功</p><h3 id="2、初始化博客"><a href="#2、初始化博客" class="headerlink" title="2、初始化博客"></a>2、初始化博客</h3><p>在空的文件夹执行，hexo init .&#x2F;</p><h3 id="3、在初始化后的文件夹中启动本地服务"><a href="#3、在初始化后的文件夹中启动本地服务" class="headerlink" title="3、在初始化后的文件夹中启动本地服务"></a>3、在初始化后的文件夹中启动本地服务</h3><p>hexo g            &#x2F;&#x2F; 这个是generate，生成静态文件</p><p>hexo server   &#x2F;&#x2F; 启动一个本地服务</p><p>启动服务后就可以在本地进行浏览。</p><h3 id="4、部署到服务端"><a href="#4、部署到服务端" class="headerlink" title="4、部署到服务端"></a>4、部署到服务端</h3><p>npm install hexo-deploy-git –save    &#x2F;&#x2F; 安装hexo用于部署的插件</p><p>打开根目录下的_config.yml文件，修改目的仓库，找到deploy，进行添加</p><p>deploy:</p><p>​type: git</p><p>​repo: 仓库路径</p><p>​branch: master</p><h3 id="5、-站点推送-hexo-deploy"><a href="#5、-站点推送-hexo-deploy" class="headerlink" title="5、 站点推送,  hexo deploy"></a>5、 站点推送,  hexo deploy</h3><p>hexo d</p><h3 id="6、其他命令"><a href="#6、其他命令" class="headerlink" title="6、其他命令"></a>6、其他命令</h3><p>hexo clean         &#x2F;&#x2F; 清楚之前生成的东西</p><h3 id="7、更新主题"><a href="#7、更新主题" class="headerlink" title="7、更新主题"></a>7、更新主题</h3><p>下载主题—》放到themes文件夹—》更改_config.xml中的theme字段为主题子文件夹</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+    <summary type="html">&lt;h2 id=&quot;一、npm的使用&quot;&gt;&lt;a href=&quot;#一、npm的使用&quot; class=&quot;headerlink&quot; title=&quot;一、npm的使用&quot;&gt;&lt;/a&gt;一、npm的使用&lt;/h2&gt;&lt;h3 id=&quot;方法1&quot;&gt;&lt;a href=&quot;#方法1&quot; class=&quot;headerlink&quot; ti</summary>
       
     
     
